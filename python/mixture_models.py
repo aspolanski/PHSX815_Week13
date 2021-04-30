@@ -9,7 +9,7 @@ import os, glob, sys
 from tqdm import tqdm
 from astropy import units as u
 
-plt.style.use("/home/custom_style1.mplstyle")
+plt.style.use("../mpl_files/custom_style1.mplstyle")
 
 #Other Modules:
 from sklearn.datasets import make_blobs
