@@ -18,15 +18,18 @@ from sklearn.cluster import KMeans
 ##### Author: Alex Polanski #####
 
 
-
+#Generate the data
 X, y_true = make_blobs(n_samples=400, centers=3,
         cluster_std=0.5, random_state=0)
 
 
+#Use KMeans to group data
 kmeans = KMeans(3, random_state=0)
 
 labels = kmeans.fit(X).predict(X)
 
 
+
+#Plot the results
 plt.scatter(X[:, 0], X[:, 1], c=labels,s=40, cmap='viridis');
 plt.show()
